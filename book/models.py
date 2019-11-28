@@ -17,6 +17,8 @@ class Book(models.Model):
     publisher=models.CharField(max_length=30)
     enrolled_date = models.DateTimeField(default=timezone.now)
 
+    
+
     def enroll(self):
         self.enrolled_date= timezone.now()
         self.save()

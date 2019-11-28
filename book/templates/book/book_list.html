@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        {% for book in books %}
+          <div>
+              <p>enrolled: {{ book.enrolled_date }}</p>
+              <h2><a href="">{{ book.title }}</a></h2>
+              <p>author: {{ book.author }}</p>
+              <p>publisher: {{ book.publisher }}</p>
+
+          </div>
+        {% endfor %}
+
+    </body>
+</html>
